@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class Commit {
-    private static final Integer startIdx = 1;
+    private static final Integer startIdx = 1; //Starting index is 1 as index 0 will have the command name
     public static String getName() {
         return "commit";
     }

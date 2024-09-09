@@ -9,10 +9,16 @@ public class Init {
         return args.length == 1;
     }
 
-    public static void execute(String[] args){
+    public static void execute(String[] args) throws Exception {
         /* TODO: Create a .baw directory if not exists
         *  TODO: Initialize CommitHead to point null and save in .baw
         *  TODO: Add sub-directory to store all commits in local
         */
+
+        if(!validateArgs(args))
+            throw new Exception("Unnecessary arguments provided!");
+
+
+
     }
 }
