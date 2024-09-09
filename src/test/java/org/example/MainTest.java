@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 public class MainTest {
 
     @Test
-    public void whenArgsEmptyThenPrintCorrectSyntax() throws IOException {
+    public void whenArgsEmptyThenPrintCorrectSyntax() throws Exception { //TODO: Sure we add exception in signature for tests? or just catch?
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         PrintStream originalOut = System.out; // Save the original System.out
 
