@@ -1,9 +1,9 @@
 package org.example;
+
 import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
@@ -12,7 +12,7 @@ public class MainTest {
 
     @Ignore
     @Test
-    public void whenArgsEmptyThenPrintCorrectSyntax() throws Exception { //TODO: Sure we add exception in signature for tests? or just catch?
+    public void whenArgsEmptyThenPrintCorrectSyntax() {
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         PrintStream originalOut = System.out; // Save the original System.out
 
