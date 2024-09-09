@@ -3,11 +3,6 @@ package org.example;
 import org.example.commands.Commit;
 import org.example.commands.Init;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.List;
-
 public class Main {
     public static void main(String[] args){
         if(args.length == 0){

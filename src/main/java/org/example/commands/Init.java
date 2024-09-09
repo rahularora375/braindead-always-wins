@@ -1,8 +1,5 @@
 package org.example.commands;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
-
 public class Init {
     public static String getName() {
         return "init";
