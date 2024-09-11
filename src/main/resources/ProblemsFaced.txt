@@ -1,0 +1,25 @@
+The list of problems tackled while working on this project - BAW
+==================================================================
+
+1. What does a CommitObject look like?
+    - id: to uniquely identify a commit
+    - msg: the description for the commit
+    - contents: the contents of various files in this commit
+    - next: reference/id of next commit
+    - prev: reference/id of previous commit
+
+2. How do we implement various commands in a structured manner?
+    - We need an interface for Command so that difference commands can have their own implementations.
+    - Command implementations need to be static, as it does not make sense to create new object everytime we run the command.
+
+3. How do we keep track of which commit is the HEAD pointing to right now?
+
+4. How do we store any object, specifically the CommitObject?
+    - We can serialize it by implementing serializable interface.
+
+5. Since serializing an object will also serialize all its reference objects and all THEIR reference objects. It does not
+make sense for our CommitObject. How do we change the structure of the class then?
+    - Instead of saving references to previous and next commit, we save unique identifiers.
+
+6. We can uniquely identify an object by hashing it, or creating unique identifier. Is UUID unique always?
+
