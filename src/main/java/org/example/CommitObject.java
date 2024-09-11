@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.List;
 
 public class CommitObject implements Serializable {
-    private String id;
+    private final String id;
     String message;
 
     //TODO: This need not be single file right? How can we save multiple files with possible different directory structures?
