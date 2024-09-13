@@ -14,12 +14,12 @@ The list of problems tackled while working on this project - BAW
 
 3. How do we keep track of which commit is the HEAD pointing to right now?
 
-4. How do we store any object, specifically the CommitObject?
+4. How do we store any object, specifically the CommitObject in Java?
     - We can serialize it by implementing serializable interface.
 
 5. Since serializing an object will also serialize all its reference objects and all THEIR reference objects. It does not
-make sense for our CommitObject. How do we change the structure of the class then?
+make sense for our CommitObject to have object references. How do we change the structure of the class then?
     - Instead of saving references to previous and next commit, we save unique identifiers.
 
-6. We can uniquely identify an object by hashing it, or creating unique identifier. Is UUID unique always?
+6. We can uniquely identify an object by hashing it, or creating unique identifier. Is UUID unique always? What's the difference?
 

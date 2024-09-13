@@ -13,15 +13,15 @@ public class Main {
         try {
             runBawCommand(args);
         }
-        catch (Exception e){
+        catch (Throwable e){
             System.out.println("Error: " + e.getMessage());
         }
     }
 
-    private static void runBawCommand(String[] args) throws Exception {
+    private static void runBawCommand(String[] args) throws Throwable {
         String cmd = args[0];
         //TODO: Each command or action should save some kind of log. Later we can use it for git log.
-
+        //TODO: Maybe only allow other commands if baw has been initialized?
         switch (cmd) {
             case "init":
                 Init.execute(args); break;
