@@ -2,10 +2,11 @@ package org.example;
 
 import org.junit.Ignore;
 import org.junit.Test;
-
+import org.example.entities.CommitHead;
+import org.example.entities.CommitObject;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-
+import org.example.utils.ObjectInputOutput;
 import static org.junit.Assert.assertEquals;
 
 public class MainTest {

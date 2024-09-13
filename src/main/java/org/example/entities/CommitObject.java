@@ -33,6 +33,7 @@ public class CommitObject implements Serializable {
 
     //TODO: Maybe this save should not be static?
     public static void save( CommitObject obj) throws Throwable {
+        //TODO: is .ser needed?
             String filePath = rootDir + obj.getId() +".ser";
             ObjectInputOutput.save(obj, filePath);
     }

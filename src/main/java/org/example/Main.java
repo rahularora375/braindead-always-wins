@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.commands.Add;
 import org.example.commands.Commit;
 import org.example.commands.Init;
 
@@ -27,6 +28,8 @@ public class Main {
                 Init.execute(args); break;
             case "commit":
                 Commit.execute(args); break;
+            case "add":
+                Add.execute(args); break;
 
             default: throw new Exception("Command name is unknown!");
         }

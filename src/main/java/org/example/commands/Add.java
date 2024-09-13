@@ -1,5 +1,6 @@
 package org.example.commands;
 
+import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
@@ -24,7 +25,12 @@ public class Add {
         if(!validateArgs(args))
             throw new Exception("Invalid Path or Path does not exist!");
 
-        Path filePath = Path.of(args[startIdx]);
+        Path path = Path.of(args[startIdx]);
+        if(Files.isDirectory(path)){
+            //TODO: How to add directory and everything inside it
+        }
+        //TODO: How to add a single file
+
 
     }
 }

@@ -23,3 +23,4 @@ make sense for our CommitObject to have object references. How do we change the 
 
 6. We can uniquely identify an object by hashing it, or creating unique identifier. Is UUID unique always? What's the difference?
 
+7. What is WatchService in Java? Is this something we can use?
